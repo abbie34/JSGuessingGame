@@ -1,0 +1,79 @@
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+section{
+    margin: 0 auto;
+    /* color: rgb(248, 248, 255) */
+    width: 60%;
+}
+
+.container{
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.intro{
+    color: white;
+    background-color: cadetblue;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.colTextDisplay{
+    font-size: 2rem;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    color: cadetblue;
+    justify-content: space-between;
+    padding: 0.5rem 10rem;
+}
+
+.listLevels{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.level, .newColor, .retake, .lives{
+    padding: 0 0.5rem;
+}
+
+.level:hover, .newColor:hover{
+    cursor: pointer;
+    background-color: cadetblue;
+    color: white;
+}
+
+.colBoxDisplay{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 15%;
+}
+
+.colBox{
+    /* border: 1px solid rgb(0, 0, 0); */
+    border-radius: 3rem;
+    height: 11rem;
+    transition: transform .2s; /* Animation */
+}
+
+.colBox:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+
